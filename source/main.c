@@ -41,22 +41,38 @@ int AMSFault(unsigned long in){
 //Brake Overtravel switch Fault Handler
 //Default low, high on fault
 int BOTSFault(unsigned long in){
-    return 0;
+    
+    //if input voltage is >11.5 volts no fault
+    if(in >= 11500)
+        return 0;
+    return 1;
 }
 
 //Master Switch Handler
 //Default low, high on fault
 int TractiveSystemMasterSwitch(unsigned long in){
-    return 0;
+    
+    //if input voltage is >11.5 volts no fault
+    if(in >= 11500)
+        return 0;
+    return 1;
 }
 
 //High Voltage Disconnect Interlock handler
 //Default low, high on fault
 int HVDInterlock(unsigned long in){
-    return 0;
+    
+    //if input voltage is >11.5 volts no fault
+    if(in >= 11500)
+        return 0;
+    return 1;
 }
 
 //additional interlock handler
 int miscInterlock(unsigned long in){
-    return 0;
+    
+    //if input voltage is >11.5 volts no fault
+    if(in >= 11500)
+        return 0;
+    return 1;
 }
