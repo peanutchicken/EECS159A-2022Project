@@ -9,7 +9,7 @@
 //Brake System plausability fault handler
 //On greater than 10% difference, should trigger fault
 //Default low, high on fault
-int bspFault(unsigned long b1, unsigned long b2);
+int bspFault(unsigned long b1, unsigned long a1, unsigned long a2);
 
 //Insulation Monitoring Device fault handler
 //Default low, high on fault
