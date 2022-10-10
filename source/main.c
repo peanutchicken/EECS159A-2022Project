@@ -2,10 +2,15 @@
 
 //fault is high output (non zero), low is no fault (0)
 
-//Brake System plausability fault handler
-//On greater than 10% difference, should trigger fault
-//Default low, high on fault
-int bspFault(unsigned long b1, unsigned long b2){
+//Brake System plausability/APPS plausability fault handler
+//The following conditions should be true before a fault
+// -Braking hard without locking the wheels
+// -Motor/Accumulator current is at a level where 5 kW of electrical power in the DC circuit
+// is delivered to the Motors at the nominal battery voltage.
+// The BSPD may delay opening the shutdown circuit up to 0.5 sec to avoid false trips
+//
+//High on fault
+int bspFault(unsigned long b1, unsigned long a1, unsigned long a2){
     return 0;
 }
 
