@@ -2,7 +2,7 @@
 
 //fault is high output (non zero), low is no fault (0)
 
-//Brake System plausability/APPS plausability fault handler
+//Brake System plausability device fault handler
 //The following conditions should be true before a fault
 // -Braking hard without locking the wheels
 // -Motor/Accumulator current is at a level where 5 kW of electrical power in the DC circuit
@@ -10,7 +10,7 @@
 // The BSPD may delay opening the shutdown circuit up to 0.5 sec to avoid false trips
 //
 //High on fault
-int bspFault(unsigned long b1, unsigned long a1, unsigned long a2){
+int BSPDFault(unsigned long b1, unsigned long a1, unsigned long a2){
     return 0;
 }
 
