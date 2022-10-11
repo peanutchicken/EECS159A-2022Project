@@ -39,6 +39,7 @@ int inertiaFault(unsigned long in){
 //fault on all 3 are high
 //for zyler
 int shutdownButtons(unsigned long bLeft, unsigned long bCockpit, unsigned long bRight){
+    //if input is received from any of the buttons, activate shutdown circuit
     if (bLeft || bCockpit || bRight)
         return 1;
     else
@@ -49,8 +50,15 @@ int shutdownButtons(unsigned long bLeft, unsigned long bCockpit, unsigned long b
 //output Default low, high on fault
 //Fault on high input
 //for zyler
-int AMSFault(unsigned long in){
-     return 0;
+int AMSFault(unsigned long volts, unsigned long temp){
+    //if voltage level falls below accepted range, return fault
+    if(volts <= 11500)
+        return 1;
+    //if temperature falls below 60 degrees celsius, return fault
+    if(temp > 60)
+        return 1;
+    else
+        return 0;
 }
 
 //Brake Overtravel switch Fault Handler
