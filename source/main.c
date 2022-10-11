@@ -27,8 +27,8 @@ int IMDFault(unsigned long in){
 //High input is fault
 //for zyler
 int inertiaFault(unsigned long in){
-    //if impact load decelerates vehicle to 8-11g, open shutdown circuit
-    if (in >= 8 && in <= 11)
+    //if impact load decelerates vehicle to 8-11g then switch is triggered to high voltage, open shutdown circuit
+    if (in >= 11500)
         return 1;
     else
         return 0;
@@ -55,7 +55,8 @@ int AMSFault(unsigned long volts, unsigned long temp){
     if(volts <= 11500)
         return 1;
     //if temperature falls below 60 degrees celsius, return fault
-    if(temp > 60)
+    //using generic temp to voltage formula: https://www.instructables.com/Temperature-Sensor-Tutorial/
+    if(temp < 1100)
         return 1;
     else
         return 0;
