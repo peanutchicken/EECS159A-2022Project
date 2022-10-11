@@ -22,24 +22,35 @@ int IMDFault(unsigned long in){
 }
 
 //Inertia Switch Fault handler
+//refer to FSAE rulebook T.9.4.3
 //output Default low, high on fault
 //High input is fault
+//for zyler
 int inertiaFault(unsigned long in){
-    return 0;
+    //if impact load decelerates vehicle to 8-11g, open shutdown circuit
+    if (in >= 8 && in <= 11)
+        return 1;
+    else
+        return 0;
 }
 
 //shutdown Button Handler
 //high Fault while all 3 are high
 //fault on all 3 are high
+//for zyler
 int shutdownButtons(unsigned long bLeft, unsigned long bCockpit, unsigned long bRight){
-    return 0;
+    if (bLeft || bCockpit || bRight)
+        return 1;
+    else
+        return 0;
 }
 
 //Accumulator Management System Fault Handler
 //output Default low, high on fault
 //Fault on high input
+//for zyler
 int AMSFault(unsigned long in){
-    return 0;
+     return 0;
 }
 
 //Brake Overtravel switch Fault Handler
