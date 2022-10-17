@@ -50,13 +50,9 @@ int shutdownButtons(unsigned long bLeft, unsigned long bCockpit, unsigned long b
 //output Default low, high on fault
 //Fault on high input
 //for zyler
-int AMSFault(unsigned long volts, unsigned long temp){
+int AMSFault(unsigned long in){
     //if voltage level falls below accepted range, return fault
-    if(volts <= 11500)
-        return 1;
-    //if temperature falls below 60 degrees celsius, return fault
-    //using generic temp to voltage formula: https://www.instructables.com/Temperature-Sensor-Tutorial/
-    if(temp < 1100)
+    if(in >= 11500)
         return 1;
     else
         return 0;
