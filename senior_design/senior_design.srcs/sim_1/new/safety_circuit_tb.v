@@ -21,6 +21,18 @@
 
 
 module safety_circuit_tb(
-
+    
     );
+    
+    reg clk;
+always 
+begin
+    clk = 1'b1; 
+    #20; // high for 20 * timescale = 20 ns
+
+    clk = 1'b0;
+    #20; // low for 20 * timescale = 20 ns
+end
 endmodule
+
+

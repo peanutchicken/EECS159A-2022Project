@@ -24,7 +24,7 @@ module shutdown(
     input left,
     input right,
     input center,
-    input fault
+    output fault
     );
 endmodule
 
@@ -46,7 +46,7 @@ module HVDInterlock(
     );
 endmodule
 
-module missInterlock(
+module miscInterlock(
     input [7:0]in,
     output fault
     );
