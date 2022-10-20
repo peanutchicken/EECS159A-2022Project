@@ -22,50 +22,82 @@ int IMDFault(unsigned long in){
 }
 
 //Inertia Switch Fault handler
+//refer to FSAE rulebook T.9.4.3
 //output Default low, high on fault
 //High input is fault
+//for zyler
 int inertiaFault(unsigned long in){
-    return 0;
+    //if impact load decelerates vehicle to 8-11g then switch is triggered to high voltage, open shutdown circuit
+    if (in >= 11500)
+        return 1;
+    else
+        return 0;
 }
 
 //shutdown Button Handler
 //high Fault while all 3 are high
 //fault on all 3 are high
+//for zyler
 int shutdownButtons(unsigned long bLeft, unsigned long bCockpit, unsigned long bRight){
-    return 0;
+    //if input is received from any of the buttons, activate shutdown circuit
+    if (bLeft || bCockpit || bRight)
+        return 1;
+    else
+        return 0;
 }
 
 //Accumulator Management System Fault Handler
 //output Default low, high on fault
 //Fault on high input
+//for zyler
 int AMSFault(unsigned long in){
-    return 0;
+    //if voltage level falls below accepted range, return fault
+    if(in >= 11500)
+        return 1;
+    else
+        return 0;
 }
 
 //Brake Overtravel switch Fault Handler
 //output Default low, high on fault
 //fault on high input
 int BOTSFault(unsigned long in){
-    return 0;
+    
+    //if input voltage is >11.5 volts no fault
+    if(in >= 11500)
+        return 0;
+    return 1;
 }
 
 //Master Switch Handler
 //output Default low, high on fault
 //fault on low
 int TractiveSystemMasterSwitch(unsigned long in){
-    return 0;
+    
+    //if input voltage is >11.5 volts no fault
+    if(in >= 11500)
+        return 0;
+    return 1;
 }
 
 //High Voltage Disconnect Interlock handler
 //output Default low, high on fault
 //fault on low
 int HVDInterlock(unsigned long in){
-    return 0;
+    
+    //if input voltage is >11.5 volts no fault
+    if(in >= 11500)
+        return 0;
+    return 1;
 }
 
 //additional interlock handler
 //output Default low, high on fault
 //fault on low
 int miscInterlock(unsigned long in){
-    return 0;
+    
+    //if input voltage is >11.5 volts no fault
+    if(in >= 11500)
+        return 0;
+    return 1;
 }

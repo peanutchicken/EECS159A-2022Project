@@ -1,0 +1,228 @@
+/*
+
+Xilinx Vivado v2022.1.2 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3605665 on Fri Aug  5 22:53:37 MDT 2022
+IP Build: 3603185 on Sat Aug  6 04:07:44 MDT 2022
+
+Process ID (PID): 30332
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Oct 17 13:06:48 PDT 2022
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Kyl3Z
+User home directory: C:/Users/Kyl3Z
+User working directory: C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2022.1
+RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/Kyl3Z/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/Kyl3Z/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/Kyl3Z/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/vivado.log
+Vivado journal file: 	C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/vivado.jou
+Engine tmp dir: 	C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/.Xil/Vivado-30332-Ekyle9
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	351 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,296 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Kyl3Z\OneDrive\Documents\GitHub\EECS159A-2022Project\senior_design\senior_design.xpr. Version: Vivado v2022.1.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 75 MB (+76158kb) [00:00:08]
+// [Engine Memory]: 1,296 MB (+1207597kb) [00:00:08]
+// [GUI Memory]: 114 MB (+37458kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  1440 ms.
+// Tcl Message: open_project C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 61 MB. Current time: 10/17/22, 1:06:48 PM PDT
+// Project name: senior_design; location: C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design; part: xc7k70tfbv676-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AMS (components.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AMS (components.v)]", 2, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 123 MB (+3184kb) [00:00:25]
+// Elapsed time: 80 seconds
+selectCodeEditor("components.v", 221, 147); // be
+selectCodeEditor("components.v", 188, 180); // be
+selectCodeEditor("components.v", 176, 206); // be
+// Elapsed time: 85 seconds
+selectCodeEditor("components.v", 73, 195); // be
+selectCodeEditor("components.v", 74, 178); // be
+// Elapsed time: 101 seconds
+selectCodeEditor("components.v", 275, 193); // be
+selectCodeEditor("components.v", 228, 215); // be
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AMS (components.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AMS (components.v)]", 2, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safety_circuit (safety_circuit.v)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safety_circuit (safety_circuit.v)]", 1, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AMS (components.v)]", 2, false); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "components.v", 1); // m
+// Elapsed time: 12 seconds
+selectCodeEditor("components.v", 165, 146); // be
+// Elapsed time: 224 seconds
+selectCodeEditor("components.v", 131, 51); // be
+selectCodeEditor("components.v", 131, 36); // be
+selectCodeEditor("components.v", 104, 197); // be
+selectCodeEditor("components.v", 122, 324); // be
+selectCodeEditor("components.v", 119, 316); // be
+selectCodeEditor("components.v", 114, 298); // be
+selectCodeEditor("components.v", 113, 404); // be
+selectCodeEditor("components.v", 147, 217); // be
+selectCodeEditor("components.v", 189, 339); // be
+selectCodeEditor("components.v", 192, 413); // be
+selectCodeEditor("components.v", 165, 238); // be
+selectCodeEditor("components.v", 168, 256); // be
+// Elapsed time: 59 seconds
+selectCodeEditor("components.v", 135, 277); // be
+selectCodeEditor("components.v", 140, 288); // be
+selectCodeEditor("components.v", 140, 288); // be
+selectCodeEditor("components.v", 141, 298); // be
+selectCodeEditor("components.v", 10, 320); // be
+selectCodeEditor("components.v", 95, 270); // be
+selectCodeEditor("components.v", 96, 293); // be
+selectCodeEditor("components.v", 20, 315); // be
+selectCodeEditor("components.v", 47, 297); // be
+// Elapsed time: 34 seconds
+selectCodeEditor("components.v", 97, 269); // be
+selectCodeEditor("components.v", 80, 329); // be
+// Elapsed time: 14 seconds
+selectCodeEditor("components.v", 81, 331); // be
+selectCodeEditor("components.v", 47, 389); // be
+selectCodeEditor("components.v", 101, 335); // be
+selectCodeEditor("components.v", 42, 347); // be
+selectCodeEditor("components.v", 144, 307, false, false, false, true, false); // be - Popup Trigger
+selectCodeEditor("components.v", 122, 327, false, false, false, true, false); // be - Popup Trigger
+selectCodeEditor("components.v", 109, 330); // be
+selectCodeEditor("components.v", 137, 340); // be
+selectCodeEditor("components.v", 137, 333); // be
+selectCodeEditor("components.v", 126, 352); // be
+// Elapsed time: 30 seconds
+selectCodeEditor("components.v", 72, 233); // be
+// Elapsed time: 85 seconds
+selectCodeEditor("components.v", 181, 227); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("components.v", 90, 350); // be
+selectCodeEditor("components.v", 60, 358); // be
+typeControlKey((HResource) null, "components.v", 'c'); // be
+selectCodeEditor("components.v", 130, 376); // be
+selectCodeEditor("components.v", 126, 376); // be
+typeControlKey((HResource) null, "components.v", 'v'); // be
+selectCodeEditor("components.v", 0, 382); // be
+selectCodeEditor("components.v", 76, 446); // be
+selectCodeEditor("components.v", 85, 467); // be
+selectCodeEditor("components.v", 69, 356); // be
+selectCodeEditor("components.v", 66, 303); // be
+// Elapsed time: 114 seconds
+selectCodeEditor("components.v", 127, 338); // be
+selectCodeEditor("components.v", 118, 316); // be
+selectCodeEditor("components.v", 129, 419); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("components.v", 114, 148); // be
+selectCodeEditor("components.v", 323, 135); // be
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent"); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // D
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 448 seconds
+selectCodeEditor("components.v", 5, 299); // be
+// Elapsed time: 39 seconds
+selectCodeEditor("components.v", 45, 451); // be
