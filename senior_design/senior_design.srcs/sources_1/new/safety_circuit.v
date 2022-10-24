@@ -29,6 +29,7 @@ module safety_circuit(
     input [7:0] IMD_Fault,
     input [7:0] Inertia_Fault,
     input [7:0] Master_Fault,
+    input [7:0] BOTS_Fault,
     input [7:0] Misc_Fault,
     input [7:0] ShutdownL_Fault,
     input [7:0] ShutdownR_Fault,
@@ -67,6 +68,11 @@ module safety_circuit(
     
     masterSwitch ms0(
         .in(Master_Fault),
+        .fault(fault)
+    );
+    
+    BOTS misc0(
+        .in(BOTS_Fault),
         .fault(fault)
     );
     

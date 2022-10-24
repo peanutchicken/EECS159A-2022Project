@@ -9,11 +9,18 @@ module BSPD(
     );
 endmodule
 
+//Kyle
 module IMD(
     input clk,
     input [7:0]in,
     output reg fault
     );
+    
+    always@(*)begin
+        if(in <= 8'd11500)begin
+            fault = 1'b1;
+        end
+    end
 endmodule
 
 module inertia(
@@ -60,23 +67,58 @@ always @ (*)
  end
 endmodule
 
+//Kyle
 module masterSwitch(
     input clk,
     input [7:0]in,
     output reg fault
     );
+    
+    always@(*)begin
+        if(in <= 8'd11500)begin
+            fault = 1'b1;
+        end
+    end
 endmodule
 
+//Kyle
+module BOTS(
+    input clk,
+    input [7:0]in,
+    output reg fault
+    );
+    
+    always@(*)begin
+        if(in <= 8'd11500)begin
+            fault = 1'b1;
+        end
+    end
+endmodule
+
+//Kyle
 module HVDInterlock(
     input clk,
     input [7:0]in,
     output reg fault
     );
+    
+    always@(*)begin
+        if(in <= 8'd11500)begin
+            fault = 1'b1;
+        end
+    end
 endmodule
 
-module missInterlock(
+//Kyle
+module miscInterlock(
     input clk,
     input [7:0]in,
     output reg fault
     );
+    
+    always@(*)begin
+        if(in <= 8'd11500)begin
+            fault = 1'b1;
+        end
+    end
 endmodule
