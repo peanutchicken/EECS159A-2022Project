@@ -71,7 +71,7 @@ module safety_circuit(
         .fault(fault)
     );
     
-    BOTS misc0(
+    BOTS bots0(
         .in(BOTS_Fault),
         .fault(fault)
     );

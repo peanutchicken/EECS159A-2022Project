@@ -204,3 +204,9 @@ selectCodeEditor("safety_circuit.v", 126, 390); // be
 selectCodeEditor("safety_circuit.v", 380, 254); // be
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 252 seconds
+selectCodeEditor("safety_circuit.v", 199, 325); // be
+selectCodeEditor("safety_circuit.v", 121, 361); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 144 MB (+982kb) [00:10:10]
