@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 
+//Kyle
 module BSPD(
     input clk,
     input [7:0]b1,
@@ -7,6 +8,22 @@ module BSPD(
     input [7:0]a2,
     input fault
     );
+    
+    //counter reg
+    reg [23:0]counter;
+    
+    always@(posedge clk)begin
+        //checks if fault is high
+        if((b1 == 1'b1) || (a1 == 1'b1) || (a2 == 1'b1))
+            counter++;
+        else
+            counter = 24'd0;
+            
+        //checks if it has been 40ns
+        if(counter >= 24'd12500000)
+            fault = 1;
+        
+    end
 endmodule
 
 //Kyle
