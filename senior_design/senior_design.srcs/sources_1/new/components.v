@@ -1,3 +1,4 @@
+
 `timescale 1ns / 1ps
 
 //Kyle
@@ -19,7 +20,7 @@ module BSPD(
         else
             counter = 24'd0;
             
-        //checks if it has been 40ns
+        //checks if it has been 0.5s
         if(counter >= 24'd12500000)
             fault = 1;
         
@@ -66,21 +67,6 @@ always @ (*)
  begin
     if (left || right || center || fault)
         shutdown_signal = 1'b1;
- end
-endmodule
-
-module AMS(
-    input clk,
-    input [7:0]in,
-    output reg fault
-    );
-
-always @ (*)
- begin
-    if (in <= 8'd11500)
-    begin
-        fault = 1;
-    end
  end
 endmodule
 
@@ -138,4 +124,33 @@ module miscInterlock(
             fault = 1'b1;
         end
     end
+
+module shutdown(
+    input clk,
+    input left,
+    input right,
+    input center,
+    input fault,
+    output reg shutdown_signal
+    );
+always @ (*)
+ begin
+    if (left || right || center || fault)
+        shutdown_signal = 1'b1;
+ end
+endmodule
+
+module AMS(
+    input clk,
+    input [7:0]in,
+    output reg fault
+    );
+
+always @ (*)
+ begin
+    if (in <= 8'd11500)
+    begin
+        fault = 1;
+    end
+ end
 endmodule
