@@ -1,0 +1,212 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 15400
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Oct 23 23:11:00 PDT 2022
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 2560x1440
+Screen resolution (DPI): 125
+Available screens: 2
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	D:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	D:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kylel
+User home directory: C:/Users/kylel
+User working directory: D:/UCI/Senior Design/senior_design
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2022.1
+RDI_DATADIR: D:/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: D:/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/kylel/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/kylel/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/kylel/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	D:/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/UCI/Senior Design/senior_design/vivado.log
+Vivado journal file: 	D:/UCI/Senior Design/senior_design/vivado.jou
+Engine tmp dir: 	D:/UCI/Senior Design/senior_design/.Xil/Vivado-15400-KyleDell
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2022.1
+XILINX_VIVADO: D:/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,255 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\UCI\Senior Design\senior_design\senior_design.xpr. Version: Vivado v2022.1.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {D:/UCI/Senior Design/senior_design/senior_design.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,255 MB. GUI used memory: 64 MB. Current time: 10/23/22, 11:11:01 PM PDT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 114 MB (+117096kb) [00:00:14]
+// [Engine Memory]: 1,255 MB (+1164524kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  2263 ms.
+// Tcl Message: open_project {D:/UCI/Senior Design/senior_design/senior_design.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design' since last save. INFO: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/UCI/Senior Design/senior_design/senior_design.gen/sources_1', nor could it be found using path 'C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// [GUI Memory]: 129 MB (+10133kb) [00:00:16]
+// Project name: senior_design; location: D:/UCI/Senior Design/senior_design; part: xc7k70tfbv676-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1219.469 ; gain = 0.000 
+dismissDialog("Open Project"); // bA
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safety_circuit (safety_circuit.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safety_circuit (safety_circuit.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1184 ms.
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safety_circuit (safety_circuit.v), ams0 : AMS (components.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safety_circuit (safety_circuit.v), ams0 : AMS (components.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, safety_circuit (safety_circuit.v), ams0 : AMS (components.v)]", 2, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1097 ms.
+selectCodeEditor("components.v", 165, 260); // be
+selectCodeEditor("components.v", 163, 329); // be
+// Elapsed time: 28 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 18 seconds
+typeControlKey((HResource) null, "components.v", 'v'); // be
+// [GUI Memory]: 136 MB (+291kb) [00:01:47]
+// Elapsed time: 25 seconds
+selectCodeEditor("components.v", 84, 395); // be
+selectCodeEditor("components.v", 74, 460); // be
+selectCodeEditor("components.v", 74, 460, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "components.v", 'c'); // be
+selectCodeEditor("components.v", 30, 225); // be
+selectCodeEditor("components.v", 536, 527); // be
+selectCodeEditor("components.v", 15, 575); // be
+selectCodeEditor("components.v", 335, 524); // be
+selectCodeEditor("components.v", 113, 684); // be
+typeControlKey((HResource) null, "components.v", 'v'); // be
+selectCodeEditor("components.v", 196, 576); // be
+selectCodeEditor("components.v", 69, 684); // be
+typeControlKey((HResource) null, "components.v", 'c'); // be
+selectCodeEditor("components.v", 96, 399); // be
+selectCodeEditor("components.v", 93, 397); // be
+typeControlKey((HResource) null, "components.v", 'v'); // be
+selectCodeEditor("components.v", 26, 469); // be
+selectCodeEditor("components.v", 56, 418); // be
+selectCodeEditor("components.v", 18, 297); // be
+selectCodeEditor("components.v", 59, 256); // be
+selectCodeEditor("components.v", 58, 370); // be
+typeControlKey((HResource) null, "components.v", 'v'); // be
+selectCodeEditor("components.v", 25, 266); // be
+selectCodeEditor("components.v", 199, 222); // be
+selectCodeEditor("components.v", 107, 471); // be
+typeControlKey((HResource) null, "components.v", 'c'); // be
+selectCodeEditor("components.v", 39, 485); // be
+typeControlKey((HResource) null, "components.v", 'v'); // be
+selectCodeEditor("components.v", 118, 479); // be
+selectCodeEditor("components.v", 118, 478, false, false, false, false, true); // be - Double Click
+selectCodeEditor("components.v", 282, 519); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "safety_circuit.v", 1); // m
+selectCodeEditor("safety_circuit.v", 67, 578); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "components.v", 2); // m
+selectCodeEditor("components.v", 98, 467); // be
+selectCodeEditor("components.v", 272, 547); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "safety_circuit.v", 1); // m
+selectCodeEditor("safety_circuit.v", 83, 635); // be
+typeControlKey((HResource) null, "safety_circuit.v", 'c'); // be
+selectCodeEditor("safety_circuit.v", 89, 448); // be
+typeControlKey((HResource) null, "safety_circuit.v", 'v'); // be
+selectCodeEditor("safety_circuit.v", 69, 470); // be
+selectCodeEditor("safety_circuit.v", 186, 470); // be
+selectCodeEditor("safety_circuit.v", 95, 463); // be
+selectCodeEditor("safety_circuit.v", 93, 463, false, false, false, false, true); // be - Double Click
+selectCodeEditor("safety_circuit.v", 312, 598); // be
+selectCodeEditor("safety_circuit.v", 352, 348); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 85 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 13); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, safety_circuit_tb (safety_circuit_tb.v), safety_circuit : safety_circuit (safety_circuit.v)]", 16, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, safety_circuit_tb (safety_circuit_tb.v), safety_circuit : safety_circuit (safety_circuit.v), hvd0 : HVDInterlock (components.v)]", 24, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, safety_circuit_tb (safety_circuit_tb.v), safety_circuit : safety_circuit (safety_circuit.v), bspd0 : BSPD (components.v)]", 18, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, safety_circuit_tb (safety_circuit_tb.v), safety_circuit : safety_circuit (safety_circuit.v), bspd0 : BSPD (components.v)]", 18, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, safety_circuit_tb (safety_circuit_tb.v)]", 15); // D
+selectCodeEditor("components.v", 141, 301); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "safety_circuit.v", 1); // m
+selectCodeEditor("safety_circuit.v", 278, 389); // be
+selectCodeEditor("safety_circuit.v", 278, 389, false, false, false, false, true); // be - Double Click
+selectCodeEditor("safety_circuit.v", 278, 389); // be
+typeControlKey((HResource) null, "safety_circuit.v", 'c'); // be
+selectCodeEditor("safety_circuit.v", 287, 364); // be
+typeControlKey((HResource) null, "safety_circuit.v", 'v'); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("safety_circuit.v", 126, 390); // be
+selectCodeEditor("safety_circuit.v", 380, 254); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 252 seconds
+selectCodeEditor("safety_circuit.v", 199, 325); // be
+selectCodeEditor("safety_circuit.v", 121, 361); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 144 MB (+982kb) [00:10:10]
