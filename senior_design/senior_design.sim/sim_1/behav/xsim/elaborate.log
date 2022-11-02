@@ -1,0 +1,27 @@
+Vivado Simulator v2022.1.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot safety_circuit_tb_behav xil_defaultlib.safety_circuit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'BSPD_b1' [F:/EECS159AProject/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:37]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'left' [F:/EECS159AProject/senior_design/senior_design.srcs/sources_1/new/safety_circuit.v:69]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'right' [F:/EECS159AProject/senior_design/senior_design.srcs/sources_1/new/safety_circuit.v:70]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'center' [F:/EECS159AProject/senior_design/senior_design.srcs/sources_1/new/safety_circuit.v:71]
+WARNING: [VRFC 10-3705] select index 224 into 'values' is out of bounds [F:/EECS159AProject/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AMS
+Compiling module xil_defaultlib.BSPD
+Compiling module xil_defaultlib.IMD
+Compiling module xil_defaultlib.inertia
+Compiling module xil_defaultlib.shutdown
+Compiling module xil_defaultlib.masterSwitch
+Compiling module xil_defaultlib.HVDInterlock
+Compiling module xil_defaultlib.miscInterlock
+Compiling module xil_defaultlib.safety_circuit
+Compiling module xil_defaultlib.safety_circuit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot safety_circuit_tb_behav

@@ -32,7 +32,7 @@ always begin
     #20; // low for 20 * timescale = 20 ns
 end
 
-    safety_circuit(
+    safety_circuit s1(
         .AMS_Fault(values[0]*8'd12000),
         .BSPD_b1(values[1*8'd12000]),
         .BSPD_a1(values[2]*8'd12000),
@@ -45,6 +45,7 @@ end
         .ShutdownL_Fault(values[9]*8'd12000),
         .ShutdownR_Fault(values[10]*8'd12000),
         .ShutdownC_Fault(values[11]*8'd12000),
+        .clk(clk),
         .fault(fault)
     );
 always @( posedge clk) begin

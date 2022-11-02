@@ -1,4 +1,3 @@
-
 `timescale 1ns / 1ps
 
 //Kyle
@@ -7,7 +6,7 @@ module BSPD(
     input [7:0]b1,
     input [7:0]a1,
     input [7:0]a2,
-    input fault
+    output reg fault
     );
     
     //counter reg
@@ -15,14 +14,17 @@ module BSPD(
     
     always@(posedge clk)begin
         //checks if fault is high
-        if((b1 == 1'b1) || (a1 == 1'b1) || (a2 == 1'b1))
-            counter++;
+        if((b1 >= 8'd11500) && (a1 >= 8'd11500) || (a2 >= 8'd11500))
+            counter = counter + 1;
         else
             counter = 24'd0;
             
         //checks if it has been 0.5s
-        if(counter >= 24'd12500000)
+        if(counter >= 24'd12500000) begin
             fault = 1;
+        end else begin
+            fault = 1'b0;
+        end    
         
     end
 endmodule
@@ -34,9 +36,11 @@ module IMD(
     output reg fault
     );
     
-    always@(*)begin
-        if(in <= 8'd11500)begin
+    always@(posedge clk) begin
+        if(in <= 8'd11500) begin
             fault = 1'b1;
+        end else begin
+            fault = 1'b0;    
         end
     end
 endmodule
@@ -46,29 +50,15 @@ module inertia(
     input[7:0]in,
     output reg fault
     );
-always @ (*)
- begin
-    if (in <= 8'd11500)
-    begin
-        fault = 1'b1;
-    end
- end
+    always @(posedge clk) begin
+        if (in <= 8'd11500) begin
+            fault = 1'b1;
+        end else begin
+            fault = 1'b0;    
+        end
+     end
 endmodule
 
-module shutdown(
-    input clk,
-    input left,
-    input right,
-    input center,
-    input fault,
-    output reg shutdown_signal
-    );
-always @ (*)
- begin
-    if (left || right || center || fault)
-        shutdown_signal = 1'b1;
- end
-endmodule
 
 //Kyle
 module masterSwitch(
@@ -77,9 +67,11 @@ module masterSwitch(
     output reg fault
     );
     
-    always@(*)begin
+    always @(posedge clk) begin
         if(in <= 8'd11500)begin
             fault = 1'b1;
+        end else begin
+            fault = 1'b0;    
         end
     end
 endmodule
@@ -91,9 +83,11 @@ module BOTS(
     output reg fault
     );
     
-    always@(*)begin
-        if(in <= 8'd11500)begin
+    always @(posedge clk) begin
+        if(in <= 8'd11500) begin
             fault = 1'b1;
+        end else begin
+            fault = 1'b0;    
         end
     end
 endmodule
@@ -105,9 +99,11 @@ module HVDInterlock(
     output reg fault
     );
     
-    always@(*)begin
-        if(in <= 8'd11500)begin
+    always @(posedge clk) begin
+        if(in <= 8'd11500) begin
             fault = 1'b1;
+        end else begin
+            fault = 1'b0;    
         end
     end
 endmodule
@@ -119,25 +115,29 @@ module miscInterlock(
     output reg fault
     );
     
-    always@(*)begin
-        if(in <= 8'd11500)begin
+    always @(posedge clk) begin
+        if(in <= 8'd11500) begin
             fault = 1'b1;
+        end else begin
+            fault = 1'b0;    
         end
     end
+endmodule
 
 module shutdown(
     input clk,
     input left,
     input right,
     input center,
-    input fault,
-    output reg shutdown_signal
+    output reg fault
     );
-always @ (*)
- begin
-    if (left || right || center || fault)
-        shutdown_signal = 1'b1;
- end
+    always @ (posedge clk) begin
+        if (left || right || center || fault) begin 
+            fault = 1'b1;
+        end else begin
+            fault = 1'b0;
+        end
+     end
 endmodule
 
 module AMS(
@@ -146,11 +146,11 @@ module AMS(
     output reg fault
     );
 
-always @ (*)
- begin
-    if (in <= 8'd11500)
-    begin
-        fault = 1;
-    end
- end
+    always @ (posedge clk) begin
+        if (in <= 8'd11500) begin
+            fault = 1;
+        end else begin
+            fault = 1'b0;    
+        end
+     end
 endmodule
