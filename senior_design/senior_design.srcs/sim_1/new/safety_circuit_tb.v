@@ -23,7 +23,7 @@
 module safety_circuit_tb();
     reg clk;
     wire fault;
-    reg [11:0]values = 0;
+    reg [12:0]values = 0;
 always begin
     clk = 1'b1; 
     #20; // high for 20 * timescale = 20 ns
@@ -46,6 +46,7 @@ end
         .ShutdownR_Fault(values[10]*8'd12000),
         .ShutdownC_Fault(values[11]*8'd12000),
         .clk(clk),
+        .BOTS_Fault(values[12]*8'd12000),
         .fault(fault)
     );
 always @( posedge clk) begin

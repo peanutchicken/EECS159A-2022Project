@@ -22,6 +22,7 @@
 
 module safety_circuit(
     input [7:0] AMS_Fault,
+    input [7:0] BOTS_Fault,
     input [7:0] BSPD_b1,
     input [7:0] BSPD_a1,
     input [7:0] BSPD_a2,
@@ -55,6 +56,12 @@ module safety_circuit(
     IMD imd0(
         .clk(clk),
         .in(IMD_Fault),
+        .fault(fault)
+    );
+    
+    BOTS bots0(
+        .clk(clk),
+        .in(BOTS_Fault),
         .fault(fault)
     );
     
