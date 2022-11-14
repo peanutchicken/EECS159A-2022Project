@@ -1,7 +1,7 @@
 #Ignore this
 *.o
 main
-senior_design/*
+senior_design/**
 
 #don't ignore this
 !*.v
