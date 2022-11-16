@@ -6,27 +6,29 @@ module BSPD(
     input [7:0]b1,
     input [7:0]a1,
     input [7:0]a2,
-    input signed [4:0]v,
-    input [3:0]c,
+    input [7:0]v,
+    input signed [4:0]c,
     output reg fault
     );
     
     reg [23:0]counter; //counter reg
-    reg [4:0]power; //power reg
-    reg [4:0]abs_v; //absolute value of voltage reg
+    reg [12:0]power; //power reg
+    reg [4:0]abs_c; //absolute value of voltage reg
     
     always@(posedge clk)begin
         //gets abs value of the voltage
-        if(v[4] == 1'b1)
-            abs_v = -v;
+        if(c[4] == 1'b1)
+            abs_c = -c;
         else
-            abs_v = v;
-              
+            abs_c = c;
+         
+        
         //calc power draw of motor
-        power = abs_v * c;
+        power = abs_c / 2500 * 30;
+        power = power * v;
         
         //checks if fault is high or too much power is being drawn
-        if((b1 >= 8'd11500) && (a1 >= 8'd11500) || (a2 >= 8'd11500) || power >= 5'd5000)
+        if((b1 >= 8'd11500) && ((a1 >= 8'd11500) || (a2 >= 8'd11500)) && power >= 13'd5000000)
             counter = counter + 1;
         else
             counter = 24'd0;

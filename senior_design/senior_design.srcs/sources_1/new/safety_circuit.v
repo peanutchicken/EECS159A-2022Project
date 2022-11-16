@@ -26,6 +26,8 @@ module safety_circuit(
     input [7:0] BSPD_b1,
     input [7:0] BSPD_a1,
     input [7:0] BSPD_a2,
+    input [7:0] BSPD_v,
+    input [4:0] BSPD_c,
     input [7:0] HVD_Fault,
     input [7:0] IMD_Fault,
     input [7:0] Inertia_Fault,
@@ -50,6 +52,8 @@ module safety_circuit(
         .b1(BSPD_b1),
         .a1(BSPD_a1),
         .a2(BSPD_a2),
+        .v(BSPD_v),
+        .c(BSPD_c),
         .fault(fault)
     );
     
