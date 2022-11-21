@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2022.1.2 (64-bit)
+# SW Build 3605665 on Fri Aug  5 22:53:37 MDT 2022
+# IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+# Start of session at: Wed Nov  9 14:54:11 2022
+# Process ID: 3488
+# Current directory: C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24148 C:\Users\Kyl3Z\OneDrive\Documents\GitHub\EECS159A-2022Project\senior_design\senior_design.xpr
+# Log file: C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/vivado.log
+# Journal file: C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design\vivado.jou
+# Running On: Ekyle9, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16312 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1

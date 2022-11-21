@@ -1,0 +1,17 @@
+
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Oct 23 23:36:39 2022
+# Process ID: 18480
+# Current directory: D:/UCI/Senior Design/senior_design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24328 D:\UCI\Senior Design\senior_design\senior_design.xpr
+# Log file: D:/UCI/Senior Design/senior_design/vivado.log
+# Journal file: D:/UCI/Senior Design/senior_design\vivado.jou
+# Running On: KyleDell, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 16962 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/UCI/Senior Design/senior_design/senior_design.xpr}
+update_compile_order -fileset sources_1
+
