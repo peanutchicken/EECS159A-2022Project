@@ -2,7 +2,7 @@
 2020.2
 Aug  5 2022
 23:24:10
-F:/EECS159AProject/senior_design/senior_design.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
-F:/EECS159AProject/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v,1667517866,verilog,,,,safety_circuit_tb,,,,,,,,
-F:/EECS159AProject/senior_design/senior_design.srcs/sources_1/new/components.v,1667185345,verilog,,F:/EECS159AProject/senior_design/senior_design.srcs/sources_1/new/safety_circuit.v,,AMS;BOTS;BSPD;HVDInterlock;IMD;inertia;masterSwitch;miscInterlock;shutdown,,,,,,,,
-F:/EECS159AProject/senior_design/senior_design.srcs/sources_1/new/safety_circuit.v,1667350604,verilog,,F:/EECS159AProject/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v,,safety_circuit,,,,,,,,
+C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.sim/sim_1/behav/xsim/glbl.v,1668034424,verilog,,,,glbl,,,,,,,,
+C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v,1668034424,verilog,,,,safety_circuit_tb,,,,,,,,
+C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v,1668034424,verilog,,C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/safety_circuit.v,,AMS;BOTS;BSPD;HVDInterlock;IMD;inertia;masterSwitch;miscInterlock;shutdown,,,,,,,,
+C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/safety_circuit.v,1668035441,verilog,,C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v,,safety_circuit,,,,,,,,

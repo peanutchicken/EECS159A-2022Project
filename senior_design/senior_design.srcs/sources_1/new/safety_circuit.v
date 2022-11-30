@@ -37,6 +37,15 @@ module safety_circuit(
     input [7:0] ShutdownR_Fault,
     input [7:0] ShutdownC_Fault,
     input clk,
+    output wire AMS_outputFault,
+    output wire BSPD_outputFault,
+    output wire BOTS_ouptputFault,
+    output wire HVD_outputFault,
+    output wire IMD_outputFault,
+    output wire Inertia_outputFault,
+    output wire Master_outputFault,
+    output wire Misc_outputFault,
+    output wire Shutdown_outputFault,
     output wire fault
     );
     
@@ -44,7 +53,7 @@ module safety_circuit(
     AMS ams0(
         .clk(clk),
         .in(AMS_Fault),
-        .fault(fault)
+        .fault(AMS_outputFault)
     );
     
     BSPD bspd0(
@@ -60,19 +69,19 @@ module safety_circuit(
     IMD imd0(
         .clk(clk),
         .in(IMD_Fault),
-        .fault(fault)
+        .fault(IMD_outputFault)
     );
     
     BOTS bots0(
         .clk(clk),
         .in(BOTS_Fault),
-        .fault(fault)
+        .fault(BOTS_ouptputFault)
     );
     
     inertia ine0(
         .clk(clk),
         .in(Inertia_Fault),
-        .fault(fault)
+        .fault(Inertia_outputFault)
     );
     
     shutdown shut0(
@@ -80,25 +89,26 @@ module safety_circuit(
         .left(ShutdownL_Fault),
         .right(ShutdownR_Fault),
         .center(ShutdownC_Fault),
-        .fault(fault)
+        .fault(Shutdown_outputFault)
     );
     
     masterSwitch ms0(
         .clk(clk),
         .in(Master_Fault),
-        .fault(fault)
+        .fault(Master_outputFault)
     );
     
     HVDInterlock hvd0(
         .clk(clk),
         .in(HVD_Fault),
-        .fault(fault)
+        .fault(HVD_outputFault)
     );
     
     miscInterlock misc0(
         .clk(clk),
         .in(Misc_Fault),
-        .fault(fault)
+        .fault(Misc_outputFault)
     );
     
+    assign fault = AMS_outputFault | BSPD_outputFault | IMD_outputFault | BOTS_ouptputFault | Inertia_outputFault | Shutdown_outputFault | Master_outputFault | HVD_outputFault | Misc_outputFault;
 endmodule
