@@ -21,25 +21,25 @@
 
 
 module safety_circuit(
-    input [7:0] AMS_Fault,
-    input [7:0] BOTS_Fault,
-    input [7:0] BSPD_b1,
-    input [7:0] BSPD_a1,
-    input [7:0] BSPD_a2,
-    input [7:0] BSPD_v,
+    input [15:0] AMS_Fault,
+    input [15:0] BOTS_Fault,
+    input [15:0] BSPD_b1,
+    input [15:0] BSPD_a1,
+    input [15:0] BSPD_a2,
+    input [15:0] BSPD_v,
     input [4:0] BSPD_c,
-    input [7:0] HVD_Fault,
-    input [7:0] IMD_Fault,
-    input [7:0] Inertia_Fault,
-    input [7:0] Master_Fault,
-    input [7:0] Misc_Fault,
-    input [7:0] ShutdownL_Fault,
-    input [7:0] ShutdownR_Fault,
-    input [7:0] ShutdownC_Fault,
+    input [15:0] HVD_Fault,
+    input [15:0] IMD_Fault,
+    input [15:0] Inertia_Fault,
+    input [15:0] Master_Fault,
+    input [15:0] Misc_Fault,
+    input [15:0] ShutdownL_Fault,
+    input [15:0] ShutdownR_Fault,
+    input [15:0] ShutdownC_Fault,
     input clk,
     output wire AMS_outputFault,
     output wire BSPD_outputFault,
-    output wire BOTS_ouptputFault,
+    output wire BOTS_outputFault,
     output wire HVD_outputFault,
     output wire IMD_outputFault,
     output wire Inertia_outputFault,
@@ -75,7 +75,7 @@ module safety_circuit(
     BOTS bots0(
         .clk(clk),
         .in(BOTS_Fault),
-        .fault(BOTS_ouptputFault)
+        .fault(BOTS_outputFault)
     );
     
     inertia ine0(
@@ -110,5 +110,6 @@ module safety_circuit(
         .fault(Misc_outputFault)
     );
     
-    assign fault = AMS_outputFault | BSPD_outputFault | IMD_outputFault | BOTS_ouptputFault | Inertia_outputFault | Shutdown_outputFault | Master_outputFault | HVD_outputFault | Misc_outputFault;
+    assign fault = AMS_outputFault || BSPD_outputFault || IMD_outputFault || BOTS_outputFault || Inertia_outputFault || Shutdown_outputFault || Master_outputFault || HVD_outputFault || Misc_outputFault;
+    
 endmodule

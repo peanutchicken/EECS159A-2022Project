@@ -3,10 +3,10 @@
 //Kyle
 module BSPD(
     input clk,
-    input [7:0]b1,
-    input [7:0]a1,
-    input [7:0]a2,
-    input [7:0]v,
+    input [15:0]b1,
+    input [15:0]a1,
+    input [15:0]a2,
+    input [15:0]v,
     input signed [4:0]c,
     output reg fault
     );
@@ -46,7 +46,7 @@ endmodule
 //Kyle
 module IMD(
     input clk,
-    input [7:0]in,
+    input [15:0]in,
     output reg fault
     );
     
@@ -61,7 +61,7 @@ endmodule
 
 module inertia(
     input clk,
-    input[7:0]in,
+    input[15:0]in,
     output reg fault
     );
     always @(posedge clk) begin
@@ -77,7 +77,7 @@ endmodule
 //Kyle
 module masterSwitch(
     input clk,
-    input [7:0]in,
+    input [15:0]in,
     output reg fault
     );
     
@@ -93,7 +93,7 @@ endmodule
 //Kyle
 module BOTS(
     input clk,
-    input [7:0]in,
+    input [15:0]in,
     output reg fault
     );
     
@@ -109,7 +109,7 @@ endmodule
 //Kyle
 module HVDInterlock(
     input clk,
-    input [7:0]in,
+    input [15:0]in,
     output reg fault
     );
     
@@ -125,7 +125,7 @@ endmodule
 //Kyle
 module miscInterlock(
     input clk,
-    input [7:0]in,
+    input [15:0]in,
     output reg fault
     );
     
@@ -156,7 +156,7 @@ endmodule
 
 module AMS(
     input clk,
-    input [7:0]in,
+    input [15:0]in,
     output reg fault
     );
 
