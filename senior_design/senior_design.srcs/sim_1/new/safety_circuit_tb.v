@@ -23,7 +23,16 @@
 module safety_circuit_tb();
     reg clk;
     wire fault;
-    reg [12:0]values = 0;
+    wire AMS_outputFault,
+        BSPD_outputFault,
+        BOTS_outputFault,
+        HVD_outputFault,
+        IMD_outputFault,
+        Inertia_outputFault,
+        Master_outputFault,
+        Misc_outputFault,
+        Shutdown_outputFault;
+    reg [16:0]values = 0;
 always begin
     clk = 1'b1; 
     #20; // high for 20 * timescale = 20 ns
@@ -33,21 +42,32 @@ always begin
 end
 
     safety_circuit s1(
-        .AMS_Fault(values[0]*8'd12000),
-        .BSPD_b1(values[1*8'd12000]),
-        .BSPD_a1(values[2]*8'd12000),
-        .BSPD_a2(values[3]*8'd12000),
-        .HVD_Fault(values[4]*8'd12000),
-        .IMD_Fault(values[5]*8'd12000),
-        .Inertia_Fault(values[6]*8'd12000),
-        .Master_Fault(values[7]*8'd12000),
-        .Misc_Fault(values[8]*8'd12000),
-        .ShutdownL_Fault(values[9]*8'd12000),
-        .ShutdownR_Fault(values[10]*8'd12000),
-        .ShutdownC_Fault(values[11]*8'd12000),
+        .AMS_Fault(values[0]*16'd12000),
+        .BSPD_b1(values[1*16'd12000]),
+        .BSPD_a1(values[2]*16'd12000),
+        .BSPD_a2(values[3]*16'd12000),
+        .HVD_Fault(values[4]*16'd12000),
+        .IMD_Fault(values[5]*16'd12000),
+        .Inertia_Fault(values[6]*16'd12000),
+        .Master_Fault(values[7]*16'd12000),
+        .Misc_Fault(values[8]*16'd12000),
+        .ShutdownL_Fault(values[9]*16'd12000),
+        .ShutdownR_Fault(values[10]*16'd12000),
+        .ShutdownC_Fault(values[11]*16'd12000),
         .clk(clk),
-        .BOTS_Fault(values[12]*8'd12000),
-        .fault(fault)
+        .BOTS_Fault(values[12]*16'd12000),
+        .fault(fault),
+        .BSPD_c(values[13]*5'b11111),
+        .BSPD_v(values[14]*16'd120),
+        .AMS_outputFault(AMS_outputFault),
+        .BSPD_outputFault(BSPD_outputFault),
+        .BOTS_outputFault(BOTS_outputFault),
+        .HVD_outputFault(HVD_outputFault),
+        .IMD_outputFault(IMD_outputFault),
+        .Inertia_outputFault(Inertia_outputFault),
+        .Master_outputFault(Master_outputFault),
+        .Misc_outputFault(Misc_outputFault),
+        .Shutdown_outputFault(Shutdown_outputFault)
     );
 always @( posedge clk) begin
     values = values + 1;
