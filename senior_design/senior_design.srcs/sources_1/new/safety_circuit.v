@@ -63,7 +63,7 @@ module safety_circuit(
         .a2(BSPD_a2),
         .v(BSPD_v),
         .c(BSPD_c),
-        .fault(fault)
+        .fault(BSPD_outputFault)
     );
     
     IMD imd0(

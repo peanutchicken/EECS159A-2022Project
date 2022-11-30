@@ -1,37 +1,37 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/components.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module BSPD
-WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v:17]
+WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/components.v:31]
 INFO: [VRFC 10-311] analyzing module IMD
-WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v:40]
+WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/components.v:54]
 INFO: [VRFC 10-311] analyzing module inertia
-WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v:54]
+WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/components.v:68]
 INFO: [VRFC 10-311] analyzing module masterSwitch
-WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v:71]
+WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/components.v:85]
 INFO: [VRFC 10-311] analyzing module BOTS
-WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v:87]
+WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/components.v:101]
 INFO: [VRFC 10-311] analyzing module HVDInterlock
-WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v:103]
+WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/components.v:117]
 INFO: [VRFC 10-311] analyzing module miscInterlock
-WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v:119]
+WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/components.v:133]
 INFO: [VRFC 10-311] analyzing module shutdown
 INFO: [VRFC 10-311] analyzing module AMS
-WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/components.v:150]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sources_1/new/safety_circuit.v" into library xil_defaultlib
+WARNING: [VRFC 10-8497] literal value 'd11500 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/components.v:164]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UCI/Senior Design/senior_design/senior_design.srcs/sources_1/new/safety_circuit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module safety_circuit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module safety_circuit_tb
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:36]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:37]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:38]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:39]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:40]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:41]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:42]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:43]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:44]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:45]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:46]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:47]
-WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:49]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:36]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:37]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:38]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:39]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:40]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:41]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:42]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:43]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:44]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:45]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:46]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:47]
+WARNING: [VRFC 10-8497] literal value 'd12000 truncated to fit in 8 bits [D:/UCI/Senior Design/senior_design/senior_design.srcs/sim_1/new/safety_circuit_tb.v:49]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UCI/Senior Design/senior_design/senior_design.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
