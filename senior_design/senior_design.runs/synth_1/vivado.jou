@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2022.1.2 (64-bit)
-# SW Build 3605665 on Fri Aug  5 22:53:37 MDT 2022
-# IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
-# Start of session at: Wed Nov  9 15:10:52 2022
-# Process ID: 24384
-# Current directory: C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.runs/synth_1
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Feb  5 11:35:24 2023
+# Process ID: 10256
+# Current directory: D:/UCI/Senior Design/senior_design/senior_design.runs/synth_1
 # Command line: vivado.exe -log safety_circuit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source safety_circuit.tcl
-# Log file: C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.runs/synth_1/safety_circuit.vds
-# Journal file: C:/Users/Kyl3Z/OneDrive/Documents/GitHub/EECS159A-2022Project/senior_design/senior_design.runs/synth_1\vivado.jou
-# Running On: Ekyle9, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16312 MB
+# Log file: D:/UCI/Senior Design/senior_design/senior_design.runs/synth_1/safety_circuit.vds
+# Journal file: D:/UCI/Senior Design/senior_design/senior_design.runs/synth_1\vivado.jou
+# Running On: KyleDell, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 16962 MB
 #-----------------------------------------------------------
 source safety_circuit.tcl -notrace
